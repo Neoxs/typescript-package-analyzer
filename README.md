@@ -134,7 +134,7 @@ The directory contains:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/typescript-package-analyzer.git
+git clone https://github.com/Neoxs/typescript-package-analyzer.git
 cd typescript-package-analyzer
 
 # Install dependencies
