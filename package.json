@@ -1,0 +1,47 @@
+{
+  "name": "typescript-package-analyzer",
+  "version": "1.0.0",
+  "description": "A comprehensive tool for analyzing TypeScript packages",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "typescript-package-analyzer": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "lint": "eslint src --ext .ts",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "author": "Neoxs",
+  "keywords": [
+    "typescript",
+    "package",
+    "analyzer",
+    "metrics",
+    "insights",
+    "dependencies",
+    "build",
+    "performance",
+    "size"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
+    "@typescript-eslint/parser": "^8.25.0",
+    "eslint": "^9.21.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}
